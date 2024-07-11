@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./static/css/styles.css" />
+  </head>
+  <body>
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Ingresos y Egresos Diego</h1>
+        </div>
+      </div>
+    </section>
+    <form id="form" class="container m-4 pl-4" method="POST">
+      <div class="field">
+        <label class="label">Descripción</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Descripción"
+            name="Descripción"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Categoria</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Categoria"
+            name="Categoria"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Forma de pago</label>
+        <div class="control">
+          <input
+            class="input"
+            type="text"
+            placeholder="Forma de pago"
+            name="Forma de pago"
+          />
+        </div>
+      </div>
+
+      <div class="field">
+        <label class="label">Ingresos</label>
+        <div class="control">
+          <input
+            class="input"
+            type="number"
+            placeholder="Ingresos"
+            name="Ingresos"
+          />
+        </div>
+      </div>
+      
+      <div class="field">
+        <label class="label">Gastos</label>
+        <div class="control">
+          <input
+            class="input"
+            type="number"
+            placeholder="Gastos"
+            name="Gastos"
+          />
+        </div>
+      </div>
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-primary" type="submit" id="submit-button">
+            Enviar
+          </button>
+        </div>
+      </div>
+    </form>
+    <div
+      id="message"
+    ></div>
+
+    <script src="./static/js/script.js"></script>
+  </body>
+</html>
